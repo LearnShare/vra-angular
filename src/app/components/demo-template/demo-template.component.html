@@ -8,4 +8,29 @@
       alt="Unsplash random image">
   <p
       [innerHTML]="htmlContent"></p>
+  <h2>2. prop/attr</h2>
+  <img
+      [src]="imgUrl"
+      alt="Unsplash random image">
+  <button
+      [attr.aria-label]="submitButtonLabel">Submit</button>
+  <h2>3. if/switch</h2>
+  <div>
+    <span
+        *ngIf="showItem">true</span>
+    <span
+        *ngIf="!showItem">false</span>
+  </div>
+  <div
+      [ngSwitch]="selectedItem">
+    <span
+        *ngSwitchCase="'A'">selected value is A</span>
+    <span
+        *ngSwitchCase="'B'">selected value is B</span>
+    <span
+        *ngSwitchCase="'C'">selected value is C</span>
+    <span
+        *ngSwitchDefault>nothing</span>
+  </div>
+  <h2>4. for</h2>
 </div>
