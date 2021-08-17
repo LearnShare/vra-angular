@@ -1,0 +1,28 @@
+<div class="app-demo-event">
+  <h1>Event</h1>
+  <div>
+    <span>count: {{ count }}&nbsp;</span>
+    <button
+        (click)="count = count + 1">Add 1</button>
+    <button
+        (click)="addOne()">Add 1</button>
+  </div>
+  <div>
+    <p>input value: {{ inputValue }}</p>
+    <input
+        type="text"
+        (input)="textChanged($event)">
+  </div>
+  <div>
+    <p>input value 2: {{ inputValue2 }}</p>
+    <input
+        type="text"
+        #input
+        (input)="textChanged2(input.value)">
+  </div>
+  <ul>
+    <li
+        *ngFor="let item of list; index as i"
+        (click)="listItemOnClick($event, 'click', i)">{{ i }}: {{ item }}</li>
+  </ul>
+</div>
