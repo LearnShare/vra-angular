@@ -14,6 +14,9 @@ export class DemoTemplateComponent {
   showItem: boolean;
   selectedItem: string;
   list: Array<string>;
+  data: {
+    [key: string]: number;
+  };
 
   constructor() {
     this.msg = 'value from data';
@@ -29,5 +32,10 @@ export class DemoTemplateComponent {
       'B',
       'C',
     ];
+    this.data = {
+      x: 1,
+      y: 2,
+      z: 3,
+    };
   }
 }

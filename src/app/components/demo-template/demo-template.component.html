@@ -33,4 +33,16 @@
         *ngSwitchDefault>nothing</span>
   </div>
   <h2>4. for</h2>
+  <ul>
+    <li
+        *ngFor="let item of list">{{ item }}</li>
+  </ul>
+  <ul>
+    <li
+        *ngFor="let item of list; index as i">{{ i }}: {{ item }}</li>
+  </ul>
+  <ul>
+    <li
+        *ngFor="let item of data | keyvalue">{{ item.key }}: {{ item.value }}</li>
+  </ul>
 </div>
