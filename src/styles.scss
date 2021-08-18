@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+.info {
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 24px;
+
+  &.success {
+    background-color: #198754;
+  }
+  &.warning {
+    background-color: #FFC107;
+  }
+  &.danger {
+    background-color: #DC3545;
+  }
+}
