@@ -36,9 +36,6 @@ export class DemoFormComponent {
       comment: 'it\'s nice',
       date: '2021-09-12',
       rememberMe: false,
-      groups: [
-        'C',
-      ],
       group: 'B',
       picked: 'A',
     };
