@@ -1,0 +1,83 @@
+<div class="app-demo-form">
+  <h1>Form</h1>
+  <h2>1. bind/event</h2>
+  <button
+      (click)="updateCount()">Count: {{ count }}</button>
+  <p>textValue: {{ textValue }}</p>
+  <input
+      type="text"
+      #input
+      [value]="textValue"
+      (input)="updateText(input.value)">
+  <p>checked: {{ checked }}</p>
+  <input
+      type="checkbox"
+      #checkbox
+      [checked]="checked"
+      (change)="updateChecked(checkbox.checked)">
+  <h2>2. [(ngModel)]</h2>
+  <p>textValue2: {{ textValue2 }}</p>
+  <input
+      type="text"
+      [(ngModel)]="textValue2" />
+  <hr>
+  <ul>
+    <li
+        *ngFor="let item of form | keyvalue">{{ item.key }}: {{ item.value }}</li>
+  </ul>
+  <form
+      (ngSubmit)="submitForm($event)">
+    <h3>text</h3>
+    <label>
+      <span>input[type="text|password|number"]</span>
+      <input
+          type="text"
+          name="username"
+          [(ngModel)]="form.username" />
+    </label>
+    <label>
+      <span>textarea</span>
+      <textarea
+          name="comment"
+          [(ngModel)]="form.comment"></textarea>
+    </label>
+    <h3>date</h3>
+    <label>
+      <span>date</span>
+      <input
+          type="date"
+          name="date"
+          [(ngModel)]="form.date">
+    </label>
+    <h3>checkbox/radio & group</h3>
+    <label>
+      <span>checkbox</span>
+      <input
+          type="checkbox"
+          name="rememberMe"
+          [(ngModel)]="form.rememberMe">
+    </label>
+    <label>
+      <span>radio group</span>
+      <div
+          *ngFor="let option of options">
+        <input
+            type="radio"
+            name="group"
+            [value]="option"
+            [(ngModel)]="form.group">
+        <span>{{ option }}</span>
+      </div>
+    </label>
+    <label>
+      <span>select</span>
+      <select
+          name="picked"
+          [(ngModel)]="form.picked">
+        <option
+            *ngFor="let option of options"
+            [value]="option">{{ option }}</option>
+      </select>
+    </label>
+  </form>
+</div>
