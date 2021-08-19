@@ -31,7 +31,7 @@ export class DemoStyleComponent {
     this.bgColor = '#CCF';
 
     const styles = [
-      'font-size: 16px',
+      'fontSize: 16px',
       'color: #F66',
     ];
     this.styleString = styles.join(';');
