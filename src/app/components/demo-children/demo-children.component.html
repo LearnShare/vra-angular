@@ -1,0 +1,19 @@
+<div class="demo-children">
+  <p>numberValue: {{ numberValue }}</p>
+  <p>stringValue: {{ stringValue }}</p>
+  <p>list:</p>
+  <ul>
+    <li
+        *ngFor="let item of list">{{ item }}</li>
+  </ul>
+  <p>config:</p>
+  <ul>
+    <li
+        *ngFor="let item of config | keyvalue">{{ item.key }}: {{ item.value }}</li>
+  </ul>
+  <p>
+    <span>count: {{ count }}&nbsp;</span>
+    <button
+        (click)="add()">+ 2</button>
+  </p>
+</div>

@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloWorldComponent } from './components/hello-world/hello-world.component';
+import { DemoChildrenComponent } from './components/demo-children/demo-children.component';
+import { DemoParentComponent } from './components/demo-parent/demo-parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent,
+    DemoChildrenComponent,
+    DemoParentComponent,
   ],
   imports: [
     BrowserModule,
