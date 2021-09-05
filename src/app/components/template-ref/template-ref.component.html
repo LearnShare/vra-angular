@@ -1,0 +1,22 @@
+<div class="demo-template-ref">
+  <ng-template>not show</ng-template>
+
+  <p
+      [ngSwitch]="type">
+    <span
+        *ngSwitchCase="'info'">
+      <ng-container
+          *ngTemplateOutlet="info">not show</ng-container>
+    </span>
+    <span
+        *ngSwitchCase="'warning'">
+      <ng-container
+          *ngTemplateOutlet="warning">not show</ng-container>
+    </span>
+  </p>
+</div>
+
+<ng-template
+    #info>info text</ng-template>
+<ng-template
+    #warning>warning text</ng-template>

@@ -1,0 +1,16 @@
+<div class="demo-ref">
+  <input
+      type="text"
+      #input
+      (input)="textChanged(input.value)">
+  <br>
+  <input
+      type="password"
+      name="password"
+      #autoHint>
+  <app-hello-world
+      #helloWorldRef
+      msg="hello"></app-hello-world>
+  <button
+      (click)="mute()">mute</button>
+</div>

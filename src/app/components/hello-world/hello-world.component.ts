@@ -8,5 +8,15 @@ import {
   templateUrl: './hello-world.component.html',
 })
 export class HelloWorldComponent {
-  @Input() msg = '';
+  @Input() msg: string = '';
+
+  muted: boolean;
+
+  constructor() {
+    this.muted = false;
+  }
+
+  mute() {
+    this.muted = true;
+  }
 }
