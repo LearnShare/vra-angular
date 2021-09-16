@@ -1,6 +1,5 @@
 import {
   Component,
-  Input,
 } from '@angular/core';
 
 @Component({
@@ -8,5 +7,5 @@ import {
   templateUrl: './hello-world.component.html',
 })
 export class HelloWorldComponent {
-  @Input() msg = '';
+  //
 }
