@@ -36,7 +36,10 @@
             "style": "kebab-case"
           }
         ],
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "@angular-eslint/no-output-native": "off",
+        "class-methods-use-this": "off",
+        "no-console": "off"
       }
     },
     {
