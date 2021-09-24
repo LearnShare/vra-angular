@@ -6,6 +6,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'vra-angular';
-
-  helloMsg = 'Hello World from Angular';
 }

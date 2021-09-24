@@ -1,0 +1,21 @@
+<div class="music-list">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>playing</th>
+        <th>liked</th>
+        <th>title</th>
+        <th>artist</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+          app-music-item
+          *ngFor="let item of list; let i = index;"
+          [index]="i"
+          [data]="item"
+          (dblclick)="play(i)"></tr>
+    </tbody>
+  </table>
+</div>

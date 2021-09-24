@@ -2,19 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { MusicPlayerService } from './services/music-player.service';
+
 import { AppComponent } from './app.component';
-import { HelloWorldComponent } from './components/hello-world/hello-world.component';
+import { MusicPlayerComponent } from './components/music-player/music-player.component';
+import { MusicListComponent } from './components/music-list/music-list.component';
+import { MusicItemComponent } from './components/music-item/music-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent,
+    MusicPlayerComponent,
+    MusicListComponent,
+    MusicItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [MusicPlayerService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
