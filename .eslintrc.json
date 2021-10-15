@@ -36,7 +36,12 @@
             "style": "kebab-case"
           }
         ],
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "no-return-assign": "off",
+        "no-param-reassign": "off",
+        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/lines-between-class-members": "off",
+        "no-console": "off"
       }
     },
     {
